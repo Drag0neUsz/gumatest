@@ -19,9 +19,14 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-gray-700 to-black p-3 rounded-full">
-                <Truck className="h-8 w-8 text-white" />
+              <div className="bg-gradient-to-r from-gray-700 to-black p-1 rounded-full">
+                <img 
+                  src="/logo3.png" 
+                  alt="MOBIL24 Logo"
+                  className="w-12 h-12 object-contain"
+                />
               </div>
+
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">MOBIL24</h1>
                 <p className="text-sm text-gray-600">ADK Profesjonalny Serwis Opon</p>
@@ -54,7 +59,7 @@ function App() {
                 <button onClick={() => scrollToSection('services')} className="text-left text-gray-700 hover:text-red-600 py-2">Usługi</button>
                 <button onClick={() => scrollToSection('about')} className="text-left text-gray-700 hover:text-red-600 py-2">O Nas</button>
                 <button onClick={() => scrollToSection('contact')} className="text-left text-gray-700 hover:text-red-600 py-2">Kontakt</button>
-                <a href="tel:+1-800-TIRE-911" className="bg-red-600 text-white px-4 py-3 rounded-lg font-semibold text-center">
+                <a href="tel:+48-577-454-800" className="bg-red-600 text-white px-4 py-3 rounded-lg font-semibold text-center">
                   Numer Tel.: 577 454 800
                 </a>
               </div>
@@ -84,7 +89,7 @@ function App() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+1-800-TIRE-911" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+              <a href="tel:+48-577-454-800" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
                 <Phone className="inline h-5 w-5 mr-2" />
                 Zadzwoń teraz: 577 454 800
               </a>
@@ -229,38 +234,39 @@ function App() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start">
-                      <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">✓</span>
-                      Ubezpieczony i profesjonalny serwis
+                    <li className="flex items-center">
+                      <span className="flex-shrink-0 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3">✓</span>
+                      <span>Ubezpieczony i profesjonalny serwis</span>
                     </li>
-                    <li className="flex items-start">
-                      <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">✓</span>
-                      Wysokiej jakości maszyny i sprzęt
+                    <li className="flex items-center">
+                      <span className="flex-shrink-0 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3">✓</span>
+                      <span>Wysokiej jakości maszyny i sprzęt</span>
                     </li>
-                    <li className="flex items-start">
-                      <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">✓</span>
-                      Przejrzyste i uczciwe podejście do klienta
+                    <li className="flex items-center">
+                      <span className="flex-shrink-0 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3">✓</span>
+                      <span>Przejrzyste i uczciwe podejście do klienta</span>
                     </li>
                   </ul>
                 </div>
                 <div>
                   <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start">
-                      <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">✓</span>
-                      Szybki czas reakcji na wezwania
+                    <li className="flex items-center">
+                      <span className="flex-shrink-0 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3">✓</span>
+                      <span>Szybki czas reakcji na wezwania</span>
                     </li>
-                    <li className="flex items-start">
-                      <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">✓</span>
-                      Kompleksowa gwarancja na naprawy na gorąco
+                    <li className="flex items-center">
+                      <span className="flex-shrink-0 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3">✓</span>
+                      <span>Kompleksowa gwarancja na naprawy na gorąco</span>
                     </li>
-                    <li className="flex items-start">
-                      <span className="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">✓</span>
-                      Obsługujemy klientów indywidualnych i biznesowych
+                    <li className="flex items-center">
+                      <span className="flex-shrink-0 bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3">✓</span>
+                      <span>Obsługujemy klientów indywidualnych i biznesowych</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -319,17 +325,6 @@ function App() {
                 Zadzwoń już teraz
               </a>
             </div>
-            <div className="rounded-lg overflow-hidden shadow-lg">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1141.3562085902038!2d17.302717920166323!3d50.911324095947556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spl!2spl!4v1754930703046!5m2!1spl!2spl"
-                    width="100%"
-                    height="250"
-                    style={{ border: 0, marginTop: '4rem' }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
-                </div>
           </div>
         </div>
         </div>
@@ -341,9 +336,13 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="bg-red-600 p-2 rounded-full">
-                  <Truck className="h-6 w-6 text-white" />
-                </div>
+                <div className="bg-red-600 p-1 rounded-full">
+                <img 
+                  src="/logo3.png" 
+                  alt="MOBIL24 Logo"
+                  className="w-8 h-8 object-contain"
+                />
+              </div>
                 <div>
                   <h3 className="text-xl font-bold">MOBIL24</h3>
                   <p className="text-gray-400 text-sm">ADK Profesjonalny Serwis Opon</p>
@@ -379,7 +378,7 @@ function App() {
             <div>
               <h4 className="text-lg font-bold mb-4">Kontakt</h4>
               <div className="space-y-3">
-                <a href="tel:+1-800-TIRE-911" className="flex items-center text-red-400 hover:text-red-300">
+                <a href="tel:+48-577-454-800" className="flex items-center text-red-400 hover:text-red-300">
                   <Phone className="h-4 w-4 mr-2" />
                   577 454 800
                 </a>
